@@ -1,0 +1,320 @@
+/* =========================
+   POS PRIME — Global Styles
+   Light-only, mobile-first
+   Aksen utama: #C04657
+   ========================= */
+
+/* 1) Tokens & Theme */
+:root {
+  /* brand */
+  --color-primary: #C04657;
+  --color-primary-600: #b43e4e;
+  --color-primary-700: #a03946;
+
+  /* neutrals */
+  --color-bg: #f7f7f9;
+  --color-surface: #ffffff;
+  --color-text: #1f2937; /* slate-800 */
+  --color-text-soft: #4b5563; /* slate-600 */
+  --color-border: #e5e7eb; /* slate-200 */
+
+  /* feedback */
+  --color-success: #16a34a;
+  --color-warning: #f59e0b;
+  --color-danger:  #dc2626;
+  --color-info:    #2563eb;
+
+  /* elevation */
+  --shadow-xs: 0 1px 2px rgba(0,0,0,.05);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,.08), 0 1px 2px rgba(0,0,0,.06);
+  --shadow-md: 0 4px 10px rgba(0,0,0,.10);
+  --shadow-lg: 0 10px 20px rgba(0,0,0,.12);
+
+  /* radius & spacing */
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+
+  /* typography */
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Inter, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+  --leading: 1.55;
+}
+
+/* 2) CSS Reset ringkas + body */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  line-height: var(--leading);
+  color: var(--color-text);
+  background:
+    radial-gradient(1200px 600px at 10% -10%, rgba(192,70,87,.06), transparent 60%),
+    radial-gradient(800px 400px at 90% 0%, rgba(192,70,87,.04), transparent 55%),
+    var(--color-bg);
+}
+
+/* 3) Typography */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 var(--space-3);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-text);
+}
+h1 { font-size: clamp(1.75rem, 1.3rem + 2vw, 2.25rem); }
+h2 { font-size: clamp(1.35rem, 1.1rem + 1.2vw, 1.75rem); }
+h3 { font-size: 1.25rem; }
+
+p { margin: 0 0 var(--space-4); color: var(--color-text-soft); }
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 600;
+}
+a:hover { text-decoration: underline; }
+
+/* 4) Layout helpers */
+.container {
+  width: min(1100px, 92%);
+  margin-inline: auto;
+  padding-block: var(--space-5);
+}
+.section {
+  margin-block: var(--space-5);
+}
+
+/* 5) Card */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-5);
+}
+.card:hover { box-shadow: var(--shadow-md); }
+
+/* 6) Buttons */
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  padding: .65rem 1rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid transparent;
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: transform .06s ease, box-shadow .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+  box-shadow: var(--shadow-xs);
+  font-weight: 600;
+}
+.button:active { transform: translateY(1px); }
+
+.button-primary {
+  color: #fff;
+  background: linear-gradient(180deg, var(--color-primary), var(--color-primary-600));
+  border-color: rgba(0,0,0,.0);
+  box-shadow: 0 6px 14px rgba(192,70,87,.25);
+}
+.button-primary:hover {
+  background: linear-gradient(180deg, var(--color-primary-600), var(--color-primary-700));
+}
+.button-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.button-ghost {
+  background: rgba(192,70,87,.08);
+  color: var(--color-primary);
+  border-color: transparent;
+}
+
+/* 7) Inputs */
+.input, .select, .textarea {
+  width: 100%;
+  padding: .65rem .9rem;
+  border-radius: var(--radius-md);
+  background: #fff;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-xs);
+  outline: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+  color: var(--color-text);
+}
+.input:focus, .select:focus, .textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 4px rgba(192,70,87,.12);
+}
+.input[disabled], .select[disabled], .textarea[disabled] {
+  background: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* 8) Badges / Chips */
+.badge {
+  display: inline-flex; align-items: center; gap: .4rem;
+  height: 28px; padding: 0 .75rem;
+  border-radius: var(--radius-pill);
+  background: rgba(192,70,87,.10);
+  color: var(--color-primary);
+  font-weight: 600; font-size: .85rem;
+}
+
+/* 9) Tables */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden; /* for rounded corners */
+  box-shadow: var(--shadow-sm);
+}
+.table thead th {
+  text-align: left;
+  padding: .9rem 1rem;
+  background: #fafafa;
+  border-bottom: 1px solid var(--color-border);
+  font-weight: 700;
+  color: var(--color-text);
+}
+.table tbody td {
+  padding: .85rem 1rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text-soft);
+}
+.table tbody tr:hover { background: #fcfcfd; }
+
+/* 10) Utility spacing (cukup umum, tidak lebay) */
+.mt-2 { margin-top: var(--space-2); }
+.mt-3 { margin-top: var(--space-3); }
+.mt-4 { margin-top: var(--space-4); }
+.mb-2 { margin-bottom: var(--space-2); }
+.mb-3 { margin-bottom: var(--space-3); }
+.mb-4 { margin-bottom: var(--space-4); }
+.p-4  { padding: var(--space-4); }
+.p-5  { padding: var(--space-5); }
+
+/* 11) Forms group */
+.form-row { display: grid; gap: var(--space-3); }
+@media (min-width: 640px) {
+  .form-row--2 { grid-template-columns: 1fr 1fr; }
+  .form-row--3 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* 12) Focus visibility (aksesibilitas) */
+:focus-visible {
+  outline: 3px solid rgba(192,70,87,.35);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* 13) Toast base (opsional, untuk konsistensi) */
+.toast {
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  box-shadow: var(--shadow-md);
+  border-radius: var(--radius-md);
+  padding: .75rem 1rem;
+  color: var(--color-text);
+}
+
+/* Badge status (sekunder, kecil) – tambahkan ke bawah blok .badge */
+.badge-success { background: rgba(22,163,74,.10); color: var(--color-success); }   /* hijau */
+.badge-warning { background: rgba(245,158,11,.12); color: var(--color-warning); }  /* oranye */
+.badge-danger  { background: rgba(220,38,38,.10); color: var(--color-danger); }    /* merah */
+
+/* --- NAV (flat style) --- */
+.sidebar { background: #fff; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); }
+.sidebar-brand { padding: 14px 16px; font-weight: 700; letter-spacing: .02em; color: var(--color-primary-700); }
+.nav { padding: 6px 8px 12px; }
+.nav-item {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: .92rem;
+  color: #374151;
+  transition: background .2s ease, color .2s ease;
+}
+.nav-item:hover { background: rgba(192, 70, 87, .06); } /* #C04657 @ 6% */
+.nav-item--active {
+  position: relative;
+  background: rgba(192, 70, 87, .10);
+  color: #1f2937;
+}
+.nav-item--active::before {
+  content: "";
+  position: absolute;
+  inset: 8px auto 8px 0;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--color-primary);
+}
+
+/* === Sidebar (clean items, no rounded) === */
+.navgroup {               /* header grup (summary) */
+  display:flex; align-items:center; justify-content:space-between;
+  padding:8px 10px;
+  font-size:11px; text-transform:uppercase; letter-spacing:.06em;
+  cursor:pointer; user-select:none;
+}
+details summary { list-style:none; }
+details summary::-webkit-details-marker { display:none; }
+
+.chev { transition: transform .2s ease; }
+details[open] .chev { transform: rotate(90deg); }
+
+.navlist { padding:4px 6px; }
+.navitem {
+  display:flex; align-items:center; gap:10px;
+  padding:8px 10px;
+  text-decoration:none;
+  color: inherit;
+  border-radius:0;              /* no rounded */
+}
+.navitem:hover {
+  background: rgba(0,0,0,.04);  /* hover halus, tetap flat */
+}
+.navitem.is-active {
+  font-weight:600;
+  color: var(--color-primary-700);
+  border-left:3px solid var(--color-primary-600);
+  background: rgba(192, 70, 87, .06); /* sangat tipis, masih clean */
+  padding-left:7px; /* kompensasi border-left (10px - 3px) */
+}
+
+/* pemisah antar group */
+nav details + details { border-top: 1px solid rgba(0,0,0,.06); }
+
+/* 14) Scrollbar halus (webkit) */
+*::-webkit-scrollbar { height: 10px; width: 10px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(192,70,87,.45), rgba(192,70,87,.65));
+  border-radius: var(--radius-pill);
+}
+
+/* 15) Motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
