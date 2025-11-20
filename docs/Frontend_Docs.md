@@ -1,7 +1,7 @@
 # Dokumentasi Frontend (FULL Source)
 
-_Dihasilkan otomatis: 2025-10-29 15:32:03_  
-**Root:** `/home/galuhdwicandra/projects/prjk-prime/frontend`
+_Dihasilkan otomatis: 2025-11-10 15:21:44_  
+**Root:** `/home/galuhdwicandra/projects/clone/project-order/frontend`
 
 
 ## Daftar Isi
@@ -149,8 +149,8 @@ _Dihasilkan otomatis: 2025-10-29 15:32:03_
 
 ### src/api/_files.ts
 
-- SHA: `e1e31e995474`  
-- Ukuran: 4 KB
+- SHA: `a3fcee732624`  
+- Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```ts
@@ -258,7 +258,7 @@ export function assertFilesBaseOrWarn(): void {
 
 ### src/api/accounting.ts
 
-- SHA: `38e730099c4a`  
+- SHA: `420bb6ef8ecc`  
 - Ukuran: 6 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -520,8 +520,8 @@ export async function deleteBranch(id: number): Promise<void> {
 
 ### src/api/cash.ts
 
-- SHA: `557d87b23870`  
-- Ukuran: 5 KB
+- SHA: `b460fe26523c`  
+- Ukuran: 4 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```ts
@@ -933,7 +933,7 @@ api.interceptors.response.use(
 
 ### src/api/customers.ts
 
-- SHA: `61394c31437f`  
+- SHA: `3989d1fa109e`  
 - Ukuran: 4 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -1064,7 +1064,7 @@ export async function setCustomerStage(
 
 ### src/api/dashboard.ts
 
-- SHA: `7c8d14f3be71`  
+- SHA: `0f2f4965a39c`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -1147,7 +1147,7 @@ export async function getQuickActions(q: DashboardQuery): Promise<QuickAction[]>
 
 ### src/api/deliveries.ts
 
-- SHA: `ad3144caf7dc`  
+- SHA: `22cf4beed178`  
 - Ukuran: 6 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -1285,7 +1285,7 @@ export async function sendWaybillWhatsapp(id: number): Promise<{ message: string
 
 ### src/api/fees.ts
 
-- SHA: `6e4cbbaebfc6`  
+- SHA: `32753f00ab61`  
 - Ukuran: 1 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -1340,7 +1340,7 @@ export async function deleteFee(id: number): Promise<void> {
 
 ### src/api/pos.ts
 
-- SHA: `fe715fce2447`  
+- SHA: `f9b907be8294`  
 - Ukuran: 11 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -2009,7 +2009,7 @@ export function deleteMedia(productId: number, mediaId: number): Promise<{ messa
 
 ### src/api/settings.ts
 
-- SHA: `c204ac715ea1`  
+- SHA: `8e45a2781d07`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -2386,7 +2386,7 @@ export async function deleteWarehouse(id: number): Promise<void> {
 
 ### src/types/accounting.ts
 
-- SHA: `91f8432166e0`  
+- SHA: `28804d78c494`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -2614,7 +2614,7 @@ export type BranchUpdatePayload = Partial<BranchCreatePayload>;
 
 ### src/types/cash.ts
 
-- SHA: `9a10a4c594af`  
+- SHA: `014137b8923b`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -2772,7 +2772,7 @@ export interface ApiError {
 
 ### src/types/customers.ts
 
-- SHA: `8656df6bae68`  
+- SHA: `4678fce94e0a`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -2859,7 +2859,7 @@ export interface CustomerTimelineEvent {
 
 ### src/types/dashboard.ts
 
-- SHA: `ed313eb29f77`  
+- SHA: `ae42b1713573`  
 - Ukuran: 1 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -2931,7 +2931,7 @@ export type DashboardQuery = {
 
 ### src/types/delivery.ts
 
-- SHA: `82c11693f58f`  
+- SHA: `9afe637d1479`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -3057,7 +3057,7 @@ export type DeliveryDetail = Delivery & { events: DeliveryEvent[] };
 
 ### src/types/fees.ts
 
-- SHA: `16db23ff4b37`  
+- SHA: `94863e23b407`  
 - Ukuran: 1 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -3152,7 +3152,7 @@ export interface ApiErrorPayload {
 
 ### src/types/pos.ts
 
-- SHA: `ef0270121a5a`  
+- SHA: `fe587afbfcc3`  
 - Ukuran: 5 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -3484,7 +3484,7 @@ export interface ApiError {
 
 ### src/types/settings.ts
 
-- SHA: `b05642d8bc61`  
+- SHA: `583befdc5a60`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -3750,7 +3750,7 @@ export type WarehouseUpdatePayload = Partial<WarehouseCreatePayload>;
 
 ### src/components/accounting/AccountTable.tsx
 
-- SHA: `e61cec29b286`  
+- SHA: `d2fcdaf658e6`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -3856,7 +3856,7 @@ export default function AccountTable({ onEdit, onDelete }: Props) {
 
 ### src/components/accounting/JournalEditor.tsx
 
-- SHA: `e56d40d4a469`  
+- SHA: `8fbb37e4531d`  
 - Ukuran: 5 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -4581,7 +4581,7 @@ export default function BranchTable({ items, onEdit, onDelete, onOpenGudang }: P
 
 ### src/components/cash/AuditTrail.tsx
 
-- SHA: `cf68ded2094b`  
+- SHA: `3f9119ad5763`  
 - Ukuran: 1 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -4637,7 +4637,7 @@ export default function AuditTrail({ move, onOpenSubmit }: Props): React.ReactEl
 
 ### src/components/cash/CashDashboard.tsx
 
-- SHA: `b81ec8164871`  
+- SHA: `723c4940423b`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -4725,7 +4725,7 @@ function CardStat(props: { title: string; value: number }): React.ReactElement {
 
 ### src/components/cash/CashHoldersTable.tsx
 
-- SHA: `911c156374d7`  
+- SHA: `f854afa13da7`  
 - Ukuran: 4 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -4860,8 +4860,8 @@ export default function CashHoldersTable({ branchId, onPickSubmit }: Props): Rea
 
 ### src/components/cash/SubmitCashDialog.tsx
 
-- SHA: `b60c8fb0e871`  
-- Ukuran: 8 KB
+- SHA: `cb71865d7aeb`  
+- Ukuran: 7 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -5672,8 +5672,8 @@ export default function CustomerSelect({
 
 ### src/components/customers/CustomerStageBadge.tsx
 
-- SHA: `e7ad2dccd028`  
-- Ukuran: 744 B
+- SHA: `09b7c89ec579`  
+- Ukuran: 722 B
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -5705,7 +5705,7 @@ export default memo(CustomerStageBadge);
 
 ### src/components/customers/CustomerTable.tsx
 
-- SHA: `fc2ffed0ffe6`  
+- SHA: `e918bbe783c3`  
 - Ukuran: 6 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -5910,7 +5910,7 @@ export default function CustomerTable({ onRowClick, canCreate = false, onCreate 
 
 ### src/components/customers/CustomerTimeline.tsx
 
-- SHA: `021538d1a994`  
+- SHA: `9a4f28c8a438`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -5985,7 +5985,7 @@ export default function CustomerTimeline({ items, loading, error }: Props) {
 
 ### src/components/dashboard/KPIStatCards.tsx
 
-- SHA: `4fa1a48a5db5`  
+- SHA: `254ce5d87719`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6074,7 +6074,7 @@ export default function KPIStatCards({ data, loading, error }: Props): React.Rea
 
 ### src/components/dashboard/LowStockList.tsx
 
-- SHA: `b9f8e02c901e`  
+- SHA: `633902c99297`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6163,7 +6163,7 @@ export default function LowStockList({ data, loading, error, onOpenStock }: Prop
 
 ### src/components/dashboard/QuickActions.tsx
 
-- SHA: `fb9e695d03b6`  
+- SHA: `6b27d8c5a244`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6262,7 +6262,7 @@ export default function QuickActions({ data, loading, error, onRun }: Props): Re
 
 ### src/components/dashboard/Sales7DaysChart.tsx
 
-- SHA: `bfd968130d89`  
+- SHA: `89bb17c2c9a7`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6366,7 +6366,7 @@ export default function Sales7DaysChart({ data, loading, error }: Props): React.
 
 ### src/components/dashboard/TopProductsList.tsx
 
-- SHA: `9a2104abd7eb`  
+- SHA: `28f9a26c2b89`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6468,7 +6468,7 @@ export default function TopProductsList({ data, loading, error, onViewVariant }:
 
 ### src/components/delivery/AssignCourierSelect.tsx
 
-- SHA: `8e44e4d4355d`  
+- SHA: `5e28ee48b991`  
 - Ukuran: 5 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6646,7 +6646,7 @@ export default function AssignCourierSelect({
 
 ### src/components/delivery/DamageClaimDialog.tsx
 
-- SHA: `7b244e954e45`  
+- SHA: `8dbb92506018`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6745,7 +6745,7 @@ export default function DamageClaimDialog({ open, onClose, onSubmit }: Props): R
 
 ### src/components/delivery/DeliveryStatusStepper.tsx
 
-- SHA: `d51ec8a96126`  
+- SHA: `85fd6629f215`  
 - Ukuran: 1 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6800,7 +6800,7 @@ export default function DeliveryStatusStepper({ status }: Props): React.ReactEle
 
 ### src/components/delivery/DeliveryTabs.tsx
 
-- SHA: `8e3569abb46a`  
+- SHA: `ee1368f321a5`  
 - Ukuran: 1 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -6910,7 +6910,7 @@ export default function WaybillPreview({ html, onClose }: Props) {
 
 ### src/components/fees/FeeDetailDialog.tsx
 
-- SHA: `af1f8a58bcaa`  
+- SHA: `d2acdc131a24`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -7028,7 +7028,7 @@ export default function FeeDetailDialog({ open, onClose, entry }: Props): React.
 
 ### src/components/fees/FeeTable.tsx
 
-- SHA: `03e99a3b0633`  
+- SHA: `157ec8358cfc`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -7134,7 +7134,7 @@ export default function FeeTable({ rows, loading, error, onSelect, onExport }: P
 
 ### src/components/fees/PeriodFilter.tsx
 
-- SHA: `24614790aa7a`  
+- SHA: `0a83c8c3e22f`  
 - Ukuran: 5 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -7667,7 +7667,7 @@ export default function Topbar({ onMenuClick, onLogout }: TopbarProps): React.Re
 
 ### src/components/pos/CartPanel.tsx
 
-- SHA: `eb0120d5d503`  
+- SHA: `3b5c39626e9c`  
 - Ukuran: 4 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -7782,8 +7782,8 @@ export default function CartPanel(): React.ReactElement {
 
 ### src/components/pos/CheckoutDialog.tsx
 
-- SHA: `491e4f4eb5c8`  
-- Ukuran: 14 KB
+- SHA: `a96f66ae8581`  
+- Ukuran: 15 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -7806,7 +7806,11 @@ type Props = {
 
 type PayMode = 'FULL' | 'DP' | 'PENDING';
 
-const payMethods: PaymentMethod[] = ['CASH', 'TRANSFER', 'QRIS'];
+const FF_XENDIT = import.meta.env.VITE_FEATURE_XENDIT === 'true';
+
+const payMethods: PaymentMethod[] = FF_XENDIT
+  ? ['CASH', 'TRANSFER', 'QRIS', 'XENDIT']
+  : ['CASH', 'TRANSFER', 'QRIS'];
 
 const CASH_POSITIONS: { label: string; value: CashPosition }[] = [
   { label: 'Konsumen', value: 'CUSTOMER' },
@@ -7931,10 +7935,10 @@ export default function CheckoutDialog({
         customer_id: selectedCustomer?.id,
         customer: (nama || phone || alamat || selectedCustomer)
           ? {
-              nama: nama || selectedCustomer?.nama || '',
-              phone: phone || selectedCustomer?.phone || '',
-              alamat: alamat || selectedCustomer?.alamat || '',
-            }
+            nama: nama || selectedCustomer?.nama || '',
+            phone: phone || selectedCustomer?.phone || '',
+            alamat: alamat || selectedCustomer?.alamat || '',
+          }
           : undefined,
         cash_position: cashPosition,
       };
@@ -7947,6 +7951,16 @@ export default function CheckoutDialog({
       } // PENDING: tanpa payment
 
       const order = await checkout(payload);
+
+      // Jika metode XENDIT: cari payment pending dan buka link invoice dari ref_no
+      if (FF_XENDIT && method === 'XENDIT') {
+        const xp = order.payments?.find(p => p.method === 'XENDIT' && p.status === 'PENDING');
+        const link = xp?.ref_no; // backend mengirimkan URL invoice di ref_no
+        if (link && /^https?:\/\//i.test(link)) {
+          window.open(link, '_blank', 'noopener,noreferrer');
+        }
+      }
+
       clear();
       onSuccess(order);
     } catch (e) {
@@ -8141,6 +8155,11 @@ export default function CheckoutDialog({
                     <option key={m} value={m}>{m}</option>
                   ))}
                 </select>
+                {method === 'XENDIT' && FF_XENDIT && (
+                  <div className="muted text-xs" style={{ marginTop: 6 }}>
+                    Setelah klik <em>Proses Bayar</em>, Anda akan diarahkan ke halaman pembayaran Xendit.
+                  </div>
+                )}
               </div>
 
               <div className="form-field">
@@ -8233,8 +8252,8 @@ export default function CheckoutDialog({
 
 ### src/components/pos/ProductGrid.tsx
 
-- SHA: `984fa8c71af6`  
-- Ukuran: 13 KB
+- SHA: `5801e0dc95ee`  
+- Ukuran: 12 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -8625,8 +8644,8 @@ export default function ProductGrid({
 
 ### src/components/pos/ProductSearch.tsx
 
-- SHA: `58c32a0da51c`  
-- Ukuran: 17 KB
+- SHA: `a339b60f16fb`  
+- Ukuran: 16 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -9158,7 +9177,7 @@ export default function ProductSearch({ warehouseId }: Props) {
 
 ### src/components/pos/ReceiptPreview.tsx
 
-- SHA: `c5cb34333c55`  
+- SHA: `27738d426179`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -10477,7 +10496,7 @@ export default function RequireRole(props: {
 
 ### src/components/settings/BackupRestorePanel.tsx
 
-- SHA: `79b8423c3e7c`  
+- SHA: `fce1d1815b50`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -10580,8 +10599,8 @@ export default function BackupRestorePanel() {
 
 ### src/components/settings/PreferenceToggles.tsx
 
-- SHA: `54a200f46849`  
-- Ukuran: 3 KB
+- SHA: `cfe02bc989a9`  
+- Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -10680,7 +10699,7 @@ export default function PreferenceToggles({ toggles, scopeId = null }: Props) {
 
 ### src/components/settings/SettingsForm.tsx
 
-- SHA: `0fd61cfff6c1`  
+- SHA: `7964655429f9`  
 - Ukuran: 5 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -12549,7 +12568,7 @@ export default function WarehouseTable({ items, onEdit, onDelete }: Props): Reac
 
 ### src/pages/accounting/AccountingAccountsIndex.tsx
 
-- SHA: `365ccd1e696d`  
+- SHA: `6426c65ada9e`  
 - Ukuran: 8 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -12823,7 +12842,7 @@ function AccountFormMini(props: {
 
 ### src/pages/accounting/AccountingJournalsIndex.tsx
 
-- SHA: `ce886b006537`  
+- SHA: `0896011ce605`  
 - Ukuran: 8 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -13062,7 +13081,7 @@ export default function AccountingJournalsIndex() {
 
 ### src/pages/accounting/AccountingReports.tsx
 
-- SHA: `da13228f2db7`  
+- SHA: `756bbf3dc58b`  
 - Ukuran: 9 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -13372,8 +13391,8 @@ export default function LoginPage(): React.ReactElement {
 
 ### src/pages/cash/CashHistory.tsx
 
-- SHA: `3b5d2ded5aef`  
-- Ukuran: 10 KB
+- SHA: `ab7b99a89e85`  
+- Ukuran: 9 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -13615,7 +13634,7 @@ export default function CashHistory(): React.ReactElement {
 
 ### src/pages/cash/CashIndex.tsx
 
-- SHA: `4c0326ee176f`  
+- SHA: `29e5df63aab7`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -13964,8 +13983,8 @@ export default function CategoryIndex(): React.ReactElement {
 
 ### src/pages/customers/CustomerDetail.tsx
 
-- SHA: `972824271ad9`  
-- Ukuran: 7 KB
+- SHA: `3e6558a729e9`  
+- Ukuran: 6 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -14172,7 +14191,7 @@ export default function CustomerDetail() {
 
 ### src/pages/customers/CustomersIndex.tsx
 
-- SHA: `acdb8772d27b`  
+- SHA: `8f7fe7eee3bb`  
 - Ukuran: 2 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -14238,7 +14257,7 @@ export default function CustomersIndex() {
 
 ### src/pages/DashboardHome.tsx
 
-- SHA: `593253017fa1`  
+- SHA: `fa9d00fe8feb`  
 - Ukuran: 8 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -14444,7 +14463,7 @@ export default function DashboardHome(): React.ReactElement {
 
 ### src/pages/delivery/DeliveryDetail.tsx
 
-- SHA: `5bec132e5907`  
+- SHA: `cb1038a62916`  
 - Ukuran: 9 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -14702,7 +14721,7 @@ export default function DeliveryDetail(): React.ReactElement {
 
 ### src/pages/delivery/DeliveryIndex.tsx
 
-- SHA: `3f155754da54`  
+- SHA: `7c1acf651248`  
 - Ukuran: 11 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -14973,7 +14992,7 @@ export default function DeliveryIndex(): React.ReactElement {
 
 ### src/pages/fees/FeeIndex.tsx
 
-- SHA: `482dceaa9ad1`  
+- SHA: `332938733e2e`  
 - Ukuran: 6 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -15152,7 +15171,7 @@ export default function FeeIndex(): React.ReactElement {
 
 ### src/pages/fees/FeeMaster.tsx
 
-- SHA: `b2cb6e66f2c7`  
+- SHA: `2b8a384def32`  
 - Ukuran: 15 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -15905,8 +15924,8 @@ export default function WarehousesPage(): React.ReactElement {
 
 ### src/pages/pos/Orders.tsx
 
-- SHA: `5daa58f5599f`  
-- Ukuran: 11 KB
+- SHA: `b076e0628bbb`  
+- Ukuran: 10 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -16220,8 +16239,8 @@ function ScopePickerBanner(): React.ReactElement {
 
 ### src/pages/pos/OrdersIndex.tsx
 
-- SHA: `488faedc3ef7`  
-- Ukuran: 30 KB
+- SHA: `b7155605aeac`  
+- Ukuran: 29 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
 ```tsx
@@ -17464,7 +17483,7 @@ export default function ProductsPage() {
 
 ### src/pages/settings/SettingsIndex.tsx
 
-- SHA: `44a4cd74f672`  
+- SHA: `59cf46f23fe1`  
 - Ukuran: 7 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 
@@ -18261,7 +18280,7 @@ export function useAuth(): AuthContextValue {
 
 ### src/store/cart.ts
 
-- SHA: `d7d95e5b91d3`  
+- SHA: `69e2cf26b3a8`  
 - Ukuran: 3 KB
 <details><summary><strong>Lihat Kode Lengkap</strong></summary>
 

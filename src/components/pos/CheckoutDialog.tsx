@@ -17,7 +17,11 @@ type Props = {
 
 type PayMode = 'FULL' | 'DP' | 'PENDING';
 
-const payMethods: PaymentMethod[] = ['CASH', 'TRANSFER', 'QRIS'];
+const FF_XENDIT = import.meta.env.VITE_FEATURE_XENDIT === 'true';
+
+const payMethods: PaymentMethod[] = FF_XENDIT
+  ? ['CASH', 'TRANSFER', 'QRIS', 'XENDIT']
+  : ['CASH', 'TRANSFER', 'QRIS'];
 
 const CASH_POSITIONS: { label: string; value: CashPosition }[] = [
   { label: 'Konsumen', value: 'CUSTOMER' },
@@ -142,10 +146,10 @@ export default function CheckoutDialog({
         customer_id: selectedCustomer?.id,
         customer: (nama || phone || alamat || selectedCustomer)
           ? {
-              nama: nama || selectedCustomer?.nama || '',
-              phone: phone || selectedCustomer?.phone || '',
-              alamat: alamat || selectedCustomer?.alamat || '',
-            }
+            nama: nama || selectedCustomer?.nama || '',
+            phone: phone || selectedCustomer?.phone || '',
+            alamat: alamat || selectedCustomer?.alamat || '',
+          }
           : undefined,
         cash_position: cashPosition,
       };
@@ -158,6 +162,16 @@ export default function CheckoutDialog({
       } // PENDING: tanpa payment
 
       const order = await checkout(payload);
+
+      // Jika metode XENDIT: cari payment pending dan buka link invoice dari ref_no
+      if (FF_XENDIT && method === 'XENDIT') {
+        const xp = order.payments?.find(p => p.method === 'XENDIT' && p.status === 'PENDING');
+        const link = xp?.ref_no; // backend mengirimkan URL invoice di ref_no
+        if (link && /^https?:\/\//i.test(link)) {
+          window.open(link, '_blank', 'noopener,noreferrer');
+        }
+      }
+
       clear();
       onSuccess(order);
     } catch (e) {
@@ -352,6 +366,11 @@ export default function CheckoutDialog({
                     <option key={m} value={m}>{m}</option>
                   ))}
                 </select>
+                {method === 'XENDIT' && FF_XENDIT && (
+                  <div className="muted text-xs" style={{ marginTop: 6 }}>
+                    Setelah klik <em>Proses Bayar</em>, Anda akan diarahkan ke halaman pembayaran Xendit.
+                  </div>
+                )}
               </div>
 
               <div className="form-field">
